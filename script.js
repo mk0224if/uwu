@@ -46,7 +46,7 @@ function selectAnswer(selectedIndex) {
     score++;
     explanation.innerHTML = `<span style="color: green;">◯</span> 正解！<br>${quiz.explanation}`;
   } else {
-    explanation.innerHTML = `<span style="color: green;">×</span> 不正解。<br>${quiz.explanation}`;
+    explanation.innerHTML = `<span style="color: red;">×</span> 不正解。<br>${quiz.explanation}`;
   }
   // 選択肢を無効化
   document.querySelectorAll(".choice").forEach(btn => btn.disabled = true);
